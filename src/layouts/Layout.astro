@@ -1,22 +1,33 @@
+---
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
+import "@fontsource-variable/noto-sans-jp";
+---
+
 <!doctype html>
-<html lang="en">
+<html
+  lang="ja"
+  class="bg-main text-font font-notoSansJp overflow-x-hidden overflow-y-scroll tracking-widest"
+>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>plage</title>
   </head>
-  <body>
-    <slot />
+
+  <body class="m-0 leading-relaxed">
+    <div class="relative">
+      <div class="grid min-h-dvh grid-rows-[auto_1fr_auto] gap-y-36">
+        <Header />
+
+        <main>
+          <slot />
+        </main>
+
+        <Footer />
+      </div>
+    </div>
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

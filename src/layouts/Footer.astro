@@ -1,0 +1,24 @@
+---
+import Navigation from "../components/Navigation.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<footer class="mb-6 mt-10 grid w-full place-content-center gap-4">
+  <Navigation />
+
+  <div class="flex items-center justify-center gap-x-4">
+    <Icon
+      class="h-6 w-6"
+      name="ant-design:github-filled"
+      aria-label="GitHubのアイコン。GitHubへのリンク。"
+    />
+
+    <Icon
+      class="h-6 w-6"
+      name="ant-design:x-outlined"
+      aria-label="Xのアイコン。Xへのリンク。"
+    />
+  </div>
+
+  <small class="text-center">© 2025 t10o</small>
+</footer>
