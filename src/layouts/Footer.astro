@@ -1,22 +1,22 @@
 ---
 import Navigation from "../components/Navigation.astro";
-import { Icon } from "astro-icon/components";
+import SnsIcon from "../components/SnsIcon.astro";
 ---
 
 <footer class="mb-6 mt-10 grid w-full place-content-center gap-4">
   <Navigation />
 
   <div class="flex items-center justify-center gap-x-4">
-    <Icon
-      class="h-6 w-6"
+    <SnsIcon
       name="ant-design:github-filled"
-      aria-label="GitHubのアイコン。GitHubへのリンク。"
+      ariaLabel="GitHubのアイコン。GitHubへのリンク。"
+      href="https://github.com/t10o"
     />
 
-    <Icon
-      class="h-6 w-6"
+    <SnsIcon
       name="ant-design:x-outlined"
-      aria-label="Xのアイコン。Xへのリンク。"
+      ariaLabel="Xのアイコン。Xへのリンク。"
+      href="https://x.com/pizaehoumaki?s=21&t=USM6njIvsXulBnY22yfXDg"
     />
   </div>
 
