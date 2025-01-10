@@ -1,0 +1,16 @@
+export const SKILLS = [
+  { name: "HTML", icon: "devicon:html5" },
+  { name: "CSS", icon: "devicon:css3" },
+  { name: "JavaScript", icon: "devicon:javascript" },
+  { name: "TypeScript", icon: "devicon:typescript" },
+  { name: "React", icon: "devicon:react" },
+  { name: "Next.js", icon: "devicon:nextjs" },
+  { name: "Vue", icon: "devicon:vuejs" },
+  { name: "Nuxt.js", icon: "devicon:nuxtjs" },
+  { name: "Astro", icon: "devicon:astro" },
+  { name: "React Native", icon: "devicon:reactnative-wordmark" },
+  { name: "NestJS", icon: "devicon:nestjs" },
+  { name: "Java", icon: "devicon:java" },
+  { name: "Tailwind", icon: "devicon:tailwindcss" },
+  { name: "Intellij IDEA", icon: "devicon:intellij" },
+];

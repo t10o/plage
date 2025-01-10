@@ -33,6 +33,7 @@
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@iconify-json/ant-design": "^1.2.5",
+    "@iconify-json/devicon": "^1.2.11",
     "@typescript-eslint/parser": "^8.19.1",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",

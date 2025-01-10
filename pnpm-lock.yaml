@@ -60,6 +60,9 @@ importers:
       '@iconify-json/ant-design':
         specifier: ^1.2.5
         version: 1.2.5
+      '@iconify-json/devicon':
+        specifier: ^1.2.11
+        version: 1.2.11
       '@typescript-eslint/parser':
         specifier: ^8.19.1
         version: 8.19.1(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
@@ -649,6 +652,9 @@ packages:
 
   '@iconify-json/ant-design@1.2.5':
     resolution: {integrity: sha512-SYxhrx1AFq2MBcXk77AERYz2mPhLQes1F0vtvG64+dJZWyge9studXo7MiR8PPeLjRjZdWRrReRbxiwdRMf70Q==}
+
+  '@iconify-json/devicon@1.2.11':
+    resolution: {integrity: sha512-siDWSFqmPKOYiMvgixqsZ/0rbUXae1M7gF14vefBtFuKXJkTvr4WPzbv1ARc7rqQlkU8XZPyH1edCXO4uToTyw==}
 
   '@iconify/react@5.2.0':
     resolution: {integrity: sha512-7Sdjrqq3fkkQNks9SY3adGC37NQTHsBJL2PRKlQd455PoDi9s+Es9AUTY+vGLFOYs5yO9w9yCE42pmxCwG26WA==}
@@ -4843,6 +4849,10 @@ snapshots:
   '@humanwhocodes/retry@0.4.1': {}
 
   '@iconify-json/ant-design@1.2.5':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/devicon@1.2.11':
     dependencies:
       '@iconify/types': 2.0.0
 

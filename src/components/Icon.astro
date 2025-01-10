@@ -1,0 +1,16 @@
+---
+import { Icon as AstroIcon } from "astro-icon/components";
+
+interface Props {
+  name: string;
+  ariaLabel: string;
+}
+
+const { name, ariaLabel } = Astro.props;
+---
+
+<div
+  class="h-10 w-10 place-content-center place-items-center rounded-full shadow-down"
+>
+  <AstroIcon class="h-6 w-6" name={name} aria-label={ariaLabel} />
+</div>

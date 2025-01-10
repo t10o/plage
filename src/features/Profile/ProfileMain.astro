@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+
+import ProfileCard from "./ProfileCard.astro";
+import profileImage from "../../assets/profile.jpeg";
+import { SKILLS } from "../../constants/skills";
+import Icon from "../../components/Icon.astro";
+---
+
+<ProfileCard>
+  <Image
+    class="mb-10 h-48 w-48 rounded-full shadow-down lg:mb-0 lg:mr-10"
+    src={profileImage}
+    alt="開発者のアイコン。デフォルメされたイラスト。外注して書いてもらった。自分の写真を絵師の方に送るのが嫌だったため、似ていると言われるキスマイの千賀の画像を送って書いてもらった。"
+  />
+
+  <div class="flex flex-col justify-end">
+    <p class="mb-2 text-3xl font-semibold">t10o</p>
+
+    <p class="mb-4 text-sm text-gray-500">フロントエンドエンジニア（自称）</p>
+
+    <p class="mb-6">浅瀬でパチャついてます。</p>
+
+    <div class="flex w-full flex-wrap gap-4">
+      {
+        SKILLS.map((skill) => {
+          return <Icon name={skill.icon} ariaLabel={skill.name} />;
+        })
+      }
+    </div>
+  </div>
+</ProfileCard>
