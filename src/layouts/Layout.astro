@@ -1,4 +1,6 @@
 ---
+import SpeedInsights from "@vercel/speed-insights/astro";
+
 import Main from "./Main.astro";
 import Header from "./Header.astro";
 import Footer from "./Footer.astro";
@@ -17,6 +19,8 @@ import "@fontsource-variable/noto-sans-jp";
     <meta name="generator" content={Astro.generator} />
     <title>plage</title>
   </head>
+
+  <SpeedInsights />
 
   <body class="m-0 leading-relaxed">
     <div class="relative">
