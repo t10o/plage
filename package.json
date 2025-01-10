@@ -31,6 +31,7 @@
     "typescript": "^5.7.2"
   },
   "devDependencies": {
+    "@astrojs/language-server": "^2.15.4",
     "@eslint/js": "^9.17.0",
     "@iconify-json/ant-design": "^1.2.5",
     "@iconify-json/devicon": "^1.2.11",
