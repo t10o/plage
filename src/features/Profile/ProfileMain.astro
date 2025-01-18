@@ -1,15 +1,15 @@
 ---
 import { Image } from "astro:assets";
 
-import ProfileCard from "./ProfileCard.astro";
 import profileImage from "../../assets/profile.jpeg";
-import { SKILLS } from "../../constants/skills";
 import Icon from "../../components/Icon.astro";
+import { SKILLS } from "../../constants/skills";
+import ProfileCard from "./ProfileCard.astro";
 ---
 
 <ProfileCard>
   <Image
-    class="mb-10 h-48 w-48 rounded-full shadow-down lg:mb-0 lg:mr-10"
+    class="mb-10 size-48 rounded-full shadow-down lg:mb-0 lg:mr-10"
     src={profileImage}
     alt="開発者のアイコン。デフォルメされたイラスト。外注して書いてもらった。自分の写真を絵師の方に送るのが嫌だったため、似ていると言われるキスマイの千賀の画像を送って書いてもらった。"
   />

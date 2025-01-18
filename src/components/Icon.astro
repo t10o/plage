@@ -9,8 +9,6 @@ interface Props {
 const { name, ariaLabel } = Astro.props;
 ---
 
-<div
-  class="flex h-10 w-10 items-center justify-center rounded-full shadow-down"
->
-  <AstroIcon class="h-6 w-6" name={name} aria-label={ariaLabel} />
+<div class="flex size-10 items-center justify-center rounded-full shadow-down">
+  <AstroIcon class="size-6" name={name} aria-label={ariaLabel} />
 </div>

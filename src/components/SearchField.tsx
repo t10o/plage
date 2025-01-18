@@ -15,7 +15,7 @@ export const SearchField = (props: Props) => {
       {props.label && <Label>{props.label}</Label>}
 
       <Input
-        className="shadow-down h-10 w-full rounded p-2"
+        className="h-10 w-full rounded p-2 shadow-down"
         type="text"
         name="keyword"
       />
